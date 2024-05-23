@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/86180e7301.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/Logo.png" alt="Web Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <i
+                class="fa-solid fa-circle-xmark"
+                style="font-size: 30px; vertical-align: top"
+                onclick="closemenu()"
+              ></i>
+            </li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"></div>
+        <p>Cyber/Net Analyst</p>
+        <h1>
+          Yo, Its <span>Rayo</span> your friendly <br />neighbourhood hacker :>
+        </h1>
+      </div>
+    </div>
+
+    <!-- --------about---------     -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" alt="userimage" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title1"><span1>Whois</span1> Rayo</h1>
+            <p>
+              Who am i? You dont want to know that... lol. Trust me you really
+              shouldnt even think about who i am, Like really really really dont
+              think about that, its not good for your health you know, you are
+              still reading this?? please stop trying to know who i am i am just
+              nobody bro, cmon man please stop reading this, ok fine i am.....
+              SIKE bro thought i will tell them who i am lolllllll. ok fine fine
+              since you are still reading this, i am just a random dude who
+              found a desktop and fell in love? more?? you want to know more??
+              cmonn nooo i cant tell you more about myself thats where you can
+              even get sick you know.... i dont want your brain to crash so
+              please stop trying to know who i am, how about knowing who i can
+              be :> i think i can be a really cool human.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Cybersecurity</span><br />Familiar with Cybersecurity
+                  concepts
+                </li>
+                <li>
+                  <span>Kali linux</span><br />Well versed in the world of linux
+                </li>
+                <li>
+                  <span>NetworkMan</span><br />No Networking error shall escape
+                  my sight
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Prodigy</span><br />Been working with computers ever
+                  since i was 15
+                </li>
+                <li>
+                  <span>Quick Grasper</span><br />All software cowers under my
+                  understanding capabilities
+                </li>
+                <li>
+                  <span>ItGuy</span><br />Common nickname earned by fixing alot
+                  of IT/Nework problems at home and at school
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>Ingrained Knowledge</span><br />It runs in the blood,
+                  family members before me were AKA IT guys.
+                </li>
+                <li><span>Youtube</span><br />Just use youtube bro??</li>
+                <li><span>RTFM</span><br />Very fun acronym to google :></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------services------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Specialities</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Cyber Analyst</h2>
+            <p>
+              i can be primarily responsible for monitoring and responding to
+              security incidents, this is done by analyzing security alerts,
+              investigating potential threats, and taking swift action to
+              mitigate risks
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Network Analyst</h2>
+            <p>
+              i can research emerging network technologies, diagnose and resolve
+              network errors/issues
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-linux"></i>
+            <h2>Linux Admin</h2>
+            <p>
+              As a back-end IT specialist i can install, configure and maintain
+              Linux operating systems, and also perform system maintenance by
+              reviewing error logs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------contact------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i> winterstalker8@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +971582233464</p>
+            <div class="social-icons">
+              <a href="https://github.com/FussionPK"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/sternritter_rayo/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://x.com/GN_Engage"
+                ><i class="fa-solid fa-x"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Reach</button>
+            </form>
+            <span id="msg">Hello</span>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" align="center">
+        &copy; 2024 - 2024 Rayo - All Rights Reserved.
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      (() => {
+        let cpr = document.getElementById("copyright");
+        cpr.innerHTML =
+          "&copy; 2024 - " +
+          new Date().getFullYear() +
+          " Rayo - All Rights Reserved.";
+      })();
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzxg3RjZmMCTFqT1IE7YY-4EEtxdlyV-mN2L96xMuo8t61biwFiyML1vsWUlGbPvYOMFA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "I'll reach out in abit love";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
