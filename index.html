@@ -1,256 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Web Profile</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/86180e7301.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="Images/Logo.png" alt="Web Logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <i
-                class="fa-solid fa-circle-xmark"
-                style="font-size: 30px; vertical-align: top"
-                onclick="closemenu()"
-              ></i>
-            </li>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text"></div>
-        <p>Cyber/Net Analyst</p>
-        <h1>
-          Yo, Its <span>Rayo</span> your friendly <br />neighbourhood hacker :>
-        </h1>
-      </div>
-    </div>
-
-    <!-- --------about---------     -->
-
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="Images/user.png" alt="userimage" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title1"><span1>Whois</span1> Rayo</h1>
-              <p>
-              Ryan – Cybersecurity Specialist | CompTIA Security+ Certified
-              </p>
-              
-              <p>
-              As a Cybersecurity Specialist with CompTIA Security+ certification, I have a strong foundation in cybersecurity principles, risk management, and threat mitigation. I specialize in securing networks, systems, and data by implementing best practices in threat detection, vulnerability management, and incident response.
-              </p>
-              
-              <p>
-              With expertise in identity and access management (IAM), cryptography, and security architecture, I help organizations strengthen their security posture against evolving cyber threats. My skills include penetration testing, network defense, SIEM monitoring, and security compliance aligned with industry standards such as NIST, ISO 27001, and PCI-DSS.
-              </p>
-              
-              <p>
-              I am passionate about cybersecurity and committed to continuous learning, staying updated with the latest security trends, tools, and frameworks to protect businesses from emerging threats.
-              </p>
-
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('Skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('Experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('Education')">Education</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86180e7301.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" alt="Website Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Ryan</span>, a Cybersecurity Specialist.</h1>
+                <p>CompTIA Security+ Certified | Network & Threat Analyst</p>
             </div>
-            <div class="tab-contents active-tab" id="Skills">
-              <ul>
-                <li>
-                  <span>Cybersecurity</span><br />Security+ Certified and well versed in cybersecurity principles.
-                </li>
-                <li>
-                  <span>Operating systems</span><br />Windown, MacOs, and oh i almost forgot I use arch btw
-                </li>
-                <li>
-                  <span>NetworkMan</span><br />I love networking errors <3
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="Experience">
-              <ul>
-                <li>
-                  <span>Prodigy</span><br />Been working with computers ever
-                  since i was 15
-                </li>
-                <li>
-                  <span>Quick Grasper</span><br />All software cowers under my
-                  understanding capabilities
-                </li>
-                <li>
-                  <span>369</span><br />Computers are interesting. really!
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="Education">
-              <ul>
-                <li>
-                  <span>Ingrained Knowledge</span><br />Not a skill issue
-                </li>
-                <li><span>Youtube</span><br />Just use youtube bro??</li>
-                <li><span>RTFM</span><br />Very fun acronym to google :></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <!-- --------services------ -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">Specialities</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-shield-halved"></i>
-            <h2>Cyber Analyst</h2>
-            <p>
-              i can be primarily responsible for monitoring and responding to
-              security incidents, this is done by analyzing security alerts,
-              investigating potential threats, and taking swift action to
-              mitigate risks
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-network-wired"></i>
-            <h2>Network Analyst</h2>
-            <p>
-              i can research emerging network technologies, diagnose and resolve
-              network errors/issues
-            </p>
-          </div>
-          <div>
-            <i class="fa-brands fa-linux"></i>
-            <h2>Linux Admin</h2>
-            <p>
-              As a back-end IT specialist i can install, configure and maintain
-              Linux operating systems, and also perform system maintenance by
-              reviewing error logs.
-            </p>
-          </div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" alt="Ryan's Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Cybersecurity Specialist with a CompTIA Security+ certification, passionate about securing digital environments. My expertise spans threat analysis, network security, incident response, and penetration testing. I help businesses safeguard their critical assets by implementing industry-standard security frameworks and best practices.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Cybersecurity</span><br>Threat detection, network security, and compliance frameworks (NIST, ISO 27001, PCI-DSS).</li>
+                            <li><span>Operating Systems</span><br>Windows, macOS, and Linux administration.</li>
+                            <li><span>Networking</span><br>Security architecture, network defense, and SIEM monitoring.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Cybersecurity Analyst</span><br>Conducting security assessments and risk analysis.</li>
+                            <li><span>Network Engineer</span><br>Managing secure network infrastructures.</li>
+                            <li><span>Incident Response</span><br>Mitigating and responding to security breaches.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>CompTIA Security+</span><br>Industry-recognized cybersecurity certification.</li>
+                            <li><span>Self-Learning</span><br>Continuous improvement through research and training.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- -------contact------- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cybersecurity Analysis</h2>
+                    <p>Expert in risk assessment, penetration testing, and security monitoring to protect digital environments.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Network Security</h2>
+                    <p>Securing networks through firewalls, VPNs, and intrusion detection systems.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Linux Administration</h2>
+                    <p>Managing and optimizing Linux systems for secure and efficient performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
             <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-regular fa-paper-plane"></i> ryanios565@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i> +971502186019</p>
-            <div class="social-icons">
-              <a href="https://github.com/FussionPK"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.instagram.com/sternritter_rayo/"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a href="https://x.com/GN_Engage"
-                ><i class="fa-solid fa-x"></i
-              ></a>
+            <div class="row contact-row">
+                <div class="contact-left">
+                    <p><i class="fa-regular fa-paper-plane"></i> ryanios565@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +971502186019</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/FussionPK"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sternritter_rayo/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/GN_Engage"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
             </div>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn">Reach</button>
-            </form>
-          </div>
         </div>
-      </div>
-      <div id="copyright" align="center">
-        &copy; 2024 - 2024 Rayo - All Rights Reserved.
-      </div>
-    </div>
+        <div id="copyright" align="center">
+            &copy; 2024 - <span id="year"></span> Ryan - All Rights Reserved.
+        </div>
+    </section>
 
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
+        document.getElementById("year").innerText = new Date().getFullYear();
+
+        function opentab(tabname) {
+            document.querySelectorAll(".tab-links").forEach(tab => tab.classList.remove("active-link"));
+            document.querySelectorAll(".tab-contents").forEach(tab => tab.classList.remove("active-tab"));
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
     </script>
-
-    <script>
-      var sidemeu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemeu.style.right = "0";
-      }
-      function closemenu() {
-        sidemeu.style.right = "-200px";
-      }
-    </script>
-
-    <script>
-      (() => {
-        let cpr = document.getElementById("copyright");
-        cpr.innerHTML =
-          "&copy; 2024 - " +
-          new Date().getFullYear() +
-          " Rayo - All Rights Reserved.";
-      })();
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzxg3RjZmMCTFqT1IE7YY-4EEtxdlyV-mN2L96xMuo8t61biwFiyML1vsWUlGbPvYOMFA/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "I'll reach out in abit love";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
+</body>
 </html>
