@@ -21,7 +21,7 @@ body.dark-mode {
 
 body.light-mode {
     background: linear-gradient(to bottom, #ffffff 0%, #f0e4ff 100%);
-    color: #1a1a1a;
+    color: #1a1a1a; /* This sets the default text color to dark gray in light mode */
 }
 
 main {
@@ -49,6 +49,10 @@ nav {
     border-radius: 15px;
 }
 
+body.light-mode nav {
+    background: rgba(255, 255, 255, 0.8); /* Lighter nav background in light mode */
+}
+
 .logo {
     width: 120px;
     filter: drop-shadow(0 0 8px #ffd700);
@@ -71,6 +75,10 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+body.light-mode nav ul li a {
+    color: #660374; /* Darker color for nav links in light mode */
+}
+
 nav ul li a:hover {
     color: #ff4500;
 }
@@ -80,6 +88,11 @@ nav ul li a:hover {
     color: #ffd700;
     font-size: 32px;
     cursor: pointer;
+}
+
+body.light-mode .fa-bars,
+body.light-mode .fa-circle-xmark {
+    color: #660374; /* Darker color for icons in light mode */
 }
 
 .mode-toggle {
@@ -94,6 +107,10 @@ nav ul li a:hover {
     transition: color 0.3s;
 }
 
+body.light-mode .mode-toggle i {
+    color: #660374; /* Darker color for mode toggle icons in light mode */
+}
+
 .mode-toggle i:hover {
     color: #ff4500;
 }
@@ -101,12 +118,12 @@ nav ul li a:hover {
 /* Header */
 header {
     height: 70vh;
-    position: relative; /* For positioning the video */
+    position: relative;
     display: flex;
     align-items: center;
     text-align: center;
     margin-top: 100px;
-    overflow: hidden; /* Ensure video doesn’t overflow */
+    overflow: hidden;
 }
 
 .header-video {
@@ -115,19 +132,23 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire header */
-    z-index: -1; /* Place the video behind the content */
+    object-fit: cover;
+    z-index: -1;
 }
 
 .header-text {
     position: relative;
-    z-index: 1; /* Ensure text is above the video */
+    z-index: 1;
 }
 
 .header-text h1 {
     font-size: 72px;
     margin-bottom: 25px;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+body.light-mode .header-text h1 {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 .header-text h1 span {
@@ -138,7 +159,11 @@ header {
 .header-text p {
     font-size: 30px;
     color: #fffacd;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+body.light-mode .header-text p {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 .btn {
@@ -170,6 +195,11 @@ section {
     text-align: center;
     margin-bottom: 70px;
     text-shadow: 0 0 15px #ffd700;
+}
+
+body.light-mode .sub-title {
+    color: #660374; /* Darker color for section titles in light mode */
+    text-shadow: none; /* Remove shadow in light mode for cleaner look */
 }
 
 /* Releases */
@@ -206,8 +236,12 @@ body.light-mode .release-card {
 
 .release-card h3 {
     margin: 20px 0;
-    color: #ff4500;
+    color: #ffd700;
     font-size: 28px;
+}
+
+body.light-mode .release-card h3 {
+    color: #660374; /* Darker color for release titles in light mode */
 }
 
 .release-card p {
@@ -216,15 +250,23 @@ body.light-mode .release-card {
     margin: 10px 0;
 }
 
+body.light-mode .release-card p {
+    color: #1a1a1a; /* Dark text in light mode */
+}
+
 .btn-small {
     display: inline-block;
     padding: 12px 30px;
-    background: #ff4500;
+    background: #ffd700;
     color: #e6e6e6;
     text-decoration: none;
     border-radius: 25px;
     margin-top: 15px;
     font-size: 18px;
+}
+
+body.light-mode .btn-small {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 /* Videos */
@@ -245,16 +287,28 @@ body.light-mode .release-card {
     box-shadow: 0 0 15px #ffd700;
 }
 
+body.light-mode .video-card video {
+    box-shadow: 0 0 15px #660374; /* Darker shadow in light mode */
+}
+
 .video-card h3 {
     margin-top: 20px;
-    color: #ff4500;
+    color: #ffd700;
     font-size: 28px;
+}
+
+body.light-mode .video-card h3 {
+    color: #660374; /* Darker color for video titles in light mode */
 }
 
 .video-card p {
     color: #fffacd;
     font-size: 20px;
     margin: 10px 0;
+}
+
+body.light-mode .video-card p {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 /* YouTube */
@@ -279,7 +333,11 @@ body.light-mode .release-card {
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 0 15px #ff4500;
+    box-shadow: 0 0 15px #ffd700;
+}
+
+body.light-mode .youtube-card img {
+    box-shadow: 0 0 15px #660374; /* Darker shadow in light mode */
 }
 
 .youtube-card h3 {
@@ -288,10 +346,18 @@ body.light-mode .release-card {
     font-size: 24px;
 }
 
+body.light-mode .youtube-card h3 {
+    color: #660374; /* Darker color for YouTube titles in light mode */
+}
+
 .youtube-card p {
     color: #fffacd;
     font-size: 20px;
     margin: 10px 0;
+}
+
+body.light-mode .youtube-card p {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 /* Artists */
@@ -326,16 +392,28 @@ body.light-mode .artist-card {
     border: 5px solid #ffd700;
 }
 
+body.light-mode .artist-card img {
+    border: 5px solid #660374; /* Darker border in light mode */
+}
+
 .artist-card h3 {
     margin: 20px 0;
     color: #ffd700;
     font-size: 28px;
 }
 
+body.light-mode .artist-card h3 {
+    color: #660374; /* Darker color for artist names in light mode */
+}
+
 .artist-card p {
     color: #fffacd;
     font-size: 20px;
     margin: 10px 0;
+}
+
+body.light-mode .artist-card p {
+    color: #1a1a1a; /* Dark text in light mode */
 }
 
 /* Audio */
@@ -374,9 +452,17 @@ body.light-mode .audio-placeholder {
     font-size: 24px;
 }
 
+body.light-mode .contact-left p {
+    color: #1a1a1a; /* Dark text in light mode */
+}
+
 .contact-left p i {
-    color: #ff4500;
+    color: #ffd700;
     margin-right: 15px;
+}
+
+body.light-mode .contact-left p i {
+    color: #660374; /* Darker icon color in light mode */
 }
 
 .social-icons a {
@@ -384,6 +470,10 @@ body.light-mode .audio-placeholder {
     font-size: 32px;
     margin-right: 20px;
     transition: color 0.3s;
+}
+
+body.light-mode .social-icons a {
+    color: #660374; /* Darker color for social icons in light mode */
 }
 
 .social-icons a:hover {
@@ -424,7 +514,7 @@ body.light-mode .contact-right textarea {
     color: #ffd700;
     text-align: center;
     font-size: 24px;
-    border-top: 2px solid #ff4500;
+    border-top: 2px solid #ffd700;
 }
 
 body.light-mode #copyright {
@@ -438,7 +528,7 @@ body.light-mode #copyright {
     position: fixed;
     bottom: 80px;
     right: 30px;
-    background: #ff4500;
+    background: #ffd700;
     color: #fff;
     border: none;
     padding: 20px;
@@ -446,6 +536,10 @@ body.light-mode #copyright {
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+body.light-mode .scroll-top-btn {
+    background: #660374; /* Darker background for scroll button in light mode */
 }
 
 .scroll-top-btn.show {
