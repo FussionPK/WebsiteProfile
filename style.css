@@ -11,7 +11,7 @@ body {
     transition: background 0.5s, color 0.5s;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -25,7 +25,7 @@ body.light-mode {
 }
 
 main {
-    flex: 1 0 auto; /* Main content takes up remaining space */
+    flex: 1 0 auto;
 }
 
 .container {
@@ -195,6 +195,7 @@ body.light-mode .release-card {
 .release-card p {
     color: #fffacd;
     font-size: 20px;
+    margin: 10px 0;
 }
 
 .btn-small {
@@ -232,6 +233,12 @@ body.light-mode .release-card {
     font-size: 28px;
 }
 
+.video-card p {
+    color: #fffacd;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
 /* YouTube */
 .youtube-grid {
     display: grid;
@@ -261,6 +268,12 @@ body.light-mode .release-card {
     margin-top: 15px;
     color: #ffd700;
     font-size: 24px;
+}
+
+.youtube-card p {
+    color: #fffacd;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 /* Artists */
@@ -304,6 +317,7 @@ body.light-mode .artist-card {
 .artist-card p {
     color: #fffacd;
     font-size: 20px;
+    margin: 10px 0;
 }
 
 /* Audio */
@@ -321,6 +335,7 @@ body.light-mode .audio-placeholder {
 
 .audio-placeholder p {
     font-size: 24px;
+    margin: 10px 0;
 }
 
 /* Contact */
@@ -384,7 +399,7 @@ body.light-mode .contact-right textarea {
 
 /* Footer (Copyright) */
 #copyright {
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
     width: 100%;
     padding: 50px 0;
     background: rgba(26, 26, 26, 0.95);
@@ -403,7 +418,7 @@ body.light-mode #copyright {
 /* Scroll to Top Button */
 .scroll-top-btn {
     position: fixed;
-    bottom: 80px; /* Adjusted to account for footer height */
+    bottom: 80px;
     right: 30px;
     background: #ff4500;
     color: #fff;
@@ -470,6 +485,6 @@ body.light-mode #copyright {
     }
 
     .scroll-top-btn {
-        bottom: 70px; /* Adjusted for mobile */
+        bottom: 70px;
     }
 }
