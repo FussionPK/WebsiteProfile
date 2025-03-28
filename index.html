@@ -3,90 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan | Cybersecurity Specialist</title>
+    <title>Aethiop Sound Records</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/86180e7301.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header">
+    <header id="home">
         <div class="container">
             <nav>
-                <img src="Images/Logo.png" alt="Website Logo" class="logo">
+                <img src="Images/logo-placeholder.png" alt="Aethiop Sound Logo" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#releases">Releases</a></li>
+                    <li><a href="#artists">Artists</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Hi, I'm <span>Ryan</span>, a Cybersecurity Specialist.</h1>
-                <p>CompTIA Security+ Certified | Network & Threat Analyst</p>
+                <h1>Welcome to <span>Aethiop Sound</span></h1>
+                <p>Where Electronic Dreams Become Reality</p>
+                <a href="#releases" class="btn">Explore Releases</a>
             </div>
         </div>
     </header>
 
-    <section id="about">
+    <section id="releases">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/user.png" alt="Ryan's Profile Picture">
+            <h1 class="sub-title">Latest Releases</h1>
+            <div class="release-grid">
+                <div class="release-card">
+                    <img src="Images/release1-placeholder.png" alt="Release 1">
+                    <h3>Neon Pulse</h3>
+                    <p>Artist: SynthMaster | Genre: Cyberpunk</p>
+                    <a href="#" class="btn-small">Listen Now</a>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I am a Cybersecurity Specialist with a CompTIA Security+ certification, passionate about securing digital environments. My expertise spans threat analysis, network security, incident response, and penetration testing. I help businesses safeguard their critical assets by implementing industry-standard security frameworks and best practices.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Cybersecurity</span><br>Threat detection, network security, and compliance frameworks (NIST, ISO 27001, PCI-DSS).</li>
-                            <li><span>Operating Systems</span><br>Windows, macOS, and Linux administration.</li>
-                            <li><span>Networking</span><br>Security architecture, network defense, and SIEM monitoring.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li><span>Cybersecurity Analyst</span><br>Conducting security assessments and risk analysis.</li>
-                            <li><span>Network Engineer</span><br>Managing secure network infrastructures.</li>
-                            <li><span>Incident Response</span><br>Mitigating and responding to security breaches.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>CompTIA Security+</span><br>Industry-recognized cybersecurity certification.</li>
-                            <li><span>Self-Learning</span><br>Continuous improvement through research and training.</li>
-                        </ul>
-                    </div>
+                <div class="release-card">
+                    <img src="Images/release2-placeholder.png" alt="Release 2">
+                    <h3>Echoes of the Grid</h3>
+                    <p>Artist: WaveRiser | Genre: Synthwave</p>
+                    <a href="#" class="btn-small">Listen Now</a>
+                </div>
+                <div class="release-card">
+                    <img src="Images/release3-placeholder.png" alt="Release 3">
+                    <h3>Quantum Drift</h3>
+                    <p>Artist: ElektroVibe | Genre: Techno</p>
+                    <a href="#" class="btn-small">Listen Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="artists">
         <div class="container">
-            <h1 class="sub-title">Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h2>Cybersecurity Analysis</h2>
-                    <p>Expert in risk assessment, penetration testing, and security monitoring to protect digital environments.</p>
+            <h1 class="sub-title">Our Artists</h1>
+            <div class="artist-grid">
+                <div class="artist-card">
+                    <img src="Images/artist1-placeholder.png" alt="Artist 1">
+                    <h3>SynthMaster</h3>
+                    <p>Pioneer of cyberpunk beats with a futuristic edge.</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-network-wired"></i>
-                    <h2>Network Security</h2>
-                    <p>Securing networks through firewalls, VPNs, and intrusion detection systems.</p>
+                <div class="artist-card">
+                    <img src="Images/artist2-placeholder.png" alt="Artist 2">
+                    <h3>WaveRiser</h3>
+                    <p>Master of retro-futuristic synthwave soundscapes.</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-linux"></i>
-                    <h2>Linux Administration</h2>
-                    <p>Managing and optimizing Linux systems for secure and efficient performance.</p>
+                <div class="artist-card">
+                    <img src="Images/artist3-placeholder.png" alt="Artist 3">
+                    <h3>ElektroVibe</h3>
+                    <p>Techno innovator pushing electronic boundaries.</p>
                 </div>
             </div>
         </div>
@@ -94,15 +80,15 @@
 
     <section id="contact">
         <div class="container">
-            <h1 class="sub-title">Contact Me</h1>
-            <div class="row contact-row">
+            <h1 class="sub-title">Contact Us</h1>
+            <div class="contact-row">
                 <div class="contact-left">
-                    <p><i class="fa-regular fa-paper-plane"></i> ryanios565@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +971502186019</p>
+                    <p><i class="fa-regular fa-paper-plane"></i> info@aethiopsound.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +1-555-123-4567</p>
                     <div class="social-icons">
-                        <a href="https://github.com/FussionPK"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/sternritter_rayo/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://x.com/GN_Engage"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+                        <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -116,19 +102,10 @@
             </div>
         </div>
         <div id="copyright" align="center">
-            &copy; 2024 - <span id="year"></span> Ryan - All Rights Reserved.
+            © 2025 - Aethiop Sound Records - All Rights Reserved.
         </div>
     </section>
 
-    <script>
-        document.getElementById("year").innerText = new Date().getFullYear();
-
-        function opentab(tabname) {
-            document.querySelectorAll(".tab-links").forEach(tab => tab.classList.remove("active-link"));
-            document.querySelectorAll(".tab-contents").forEach(tab => tab.classList.remove("active-tab"));
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
