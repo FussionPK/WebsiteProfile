@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu functionality
+// Mobile menu functionality test
 function openmenu() {
     document.getElementById("sidemenu").style.right = "0";
 }
