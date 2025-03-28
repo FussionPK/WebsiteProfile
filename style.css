@@ -16,7 +16,7 @@ body {
 }
 
 body.dark-mode {
-    background: linear-gradient(to bottom, #000000 0%, #660374 100%);
+    background: linear-gradient(to bottom, #000000 0%, #222022 100%);
 }
 
 body.light-mode {
@@ -148,7 +148,7 @@ header {
 }
 
 body.light-mode .header-text h1 {
-    color: #1a1a1a; /* Dark text in light mode */
+    color: #ffffff; 
 }
 
 .header-text h1 span {
@@ -163,7 +163,7 @@ body.light-mode .header-text h1 {
 }
 
 body.light-mode .header-text p {
-    color: #1a1a1a; /* Dark text in light mode */
+    color: #ffffff; 
 }
 
 .btn {
