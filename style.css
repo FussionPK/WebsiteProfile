@@ -101,16 +101,33 @@ nav ul li a:hover {
 /* Header */
 header {
     height: 70vh;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, #e2de00 100%);
+    position: relative; /* For positioning the video */
     display: flex;
     align-items: center;
     text-align: center;
     margin-top: 100px;
+    overflow: hidden; /* Ensure video doesn’t overflow */
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire header */
+    z-index: -1; /* Place the video behind the content */
+}
+
+.header-text {
+    position: relative;
+    z-index: 1; /* Ensure text is above the video */
 }
 
 .header-text h1 {
     font-size: 72px;
     margin-bottom: 25px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
 }
 
 .header-text h1 span {
@@ -121,6 +138,7 @@ header {
 .header-text p {
     font-size: 30px;
     color: #fffacd;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Add shadow for readability */
 }
 
 .btn {
