@@ -16,7 +16,7 @@ body {
 }
 
 body.dark-mode {
-    background: linear-gradient(to bottom, #000000 0%, #222022 100%);
+    background: linear-gradient(to bottom, #000000 0%, #313031 100%);
 }
 
 body.light-mode {
