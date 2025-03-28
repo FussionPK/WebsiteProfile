@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #0d0d1a; /* Dark electronic theme */
+    background: linear-gradient(135deg, #ffd700 0%, #ff4500 100%); /* Gold to Orange gradient */
     color: #e6e6e6;
     overflow-x: hidden;
 }
@@ -27,13 +27,13 @@ nav {
     width: 90%;
     max-width: 1200px;
     top: 0;
-    background: rgba(13, 13, 26, 0.9);
+    background: rgba(0, 0, 0, 0.8); /* Darker nav background for contrast */
     z-index: 100;
 }
 
 .logo {
     width: 100px;
-    filter: drop-shadow(0 0 5px #00ffcc);
+    filter: drop-shadow(0 0 5px #ffd700); /* Gold shadow */
 }
 
 nav ul {
@@ -46,19 +46,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ffcc;
+    color: #ffd700; /* Gold text */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff007a;
+    color: #ff4500; /* Orange hover */
 }
 
 .fa-bars, .fa-circle-xmark {
     display: none;
-    color: #00ffcc;
+    color: #ffd700; /* Gold icons */
     font-size: 24px;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@ nav ul li a:hover {
 /* Header */
 header {
     height: 100vh;
-    background: linear-gradient(135deg, #1a1a3d 0%, #0d0d1a 100%);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 69, 0, 0.2) 100%); /* Subtle gradient overlay */
     display: flex;
     align-items: center;
     text-align: center;
@@ -78,21 +78,21 @@ header {
 }
 
 .header-text h1 span {
-    color: #ff007a;
-    text-shadow: 0 0 10px #ff007a;
+    color: #ff4500; /* Orange highlight */
+    text-shadow: 0 0 10px #ff4500;
 }
 
 .header-text p {
     font-size: 24px;
-    color: #b3b3cc;
+    color: #fffacd; /* Light gold for contrast */
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 30px;
-    background: #00ffcc;
-    color: #0d0d1a;
+    background: #ffd700; /* Gold button */
+    color: #1a1a1a; /* Dark text for contrast */
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -101,7 +101,7 @@ header {
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #00ffcc;
+    box-shadow: 0 0 15px #ff4500; /* Orange glow */
 }
 
 /* Sections */
@@ -111,10 +111,10 @@ section {
 
 .sub-title {
     font-size: 48px;
-    color: #00ffcc;
+    color: #ffd700; /* Gold title */
     text-align: center;
     margin-bottom: 50px;
-    text-shadow: 0 0 10px #00ffcc;
+    text-shadow: 0 0 10px #ffd700;
 }
 
 /* Releases */
@@ -125,7 +125,7 @@ section {
 }
 
 .release-card {
-    background: #1a1a3d;
+    background: rgba(26, 26, 26, 0.9); /* Darker card for contrast */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -134,7 +134,7 @@ section {
 
 .release-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px #ff007a;
+    box-shadow: 0 0 20px #ff4500; /* Orange glow */
 }
 
 .release-card img {
@@ -146,17 +146,17 @@ section {
 
 .release-card h3 {
     margin: 15px 0;
-    color: #ff007a;
+    color: #ff4500; /* Orange text */
 }
 
 .release-card p {
-    color: #b3b3cc;
+    color: #fffacd; /* Light gold */
 }
 
 .btn-small {
     display: inline-block;
     padding: 8px 20px;
-    background: #ff007a;
+    background: #ff4500; /* Orange button */
     color: #e6e6e6;
     text-decoration: none;
     border-radius: 20px;
@@ -171,7 +171,7 @@ section {
 }
 
 .artist-card {
-    background: #1a1a3d;
+    background: rgba(26, 26, 26, 0.9); /* Darker card for contrast */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -182,16 +182,16 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #00ffcc;
+    border: 3px solid #ffd700; /* Gold border */
 }
 
 .artist-card h3 {
     margin: 15px 0;
-    color: #00ffcc;
+    color: #ffd700; /* Gold text */
 }
 
 .artist-card p {
-    color: #b3b3cc;
+    color: #fffacd; /* Light gold */
 }
 
 /* Contact */
@@ -212,19 +212,19 @@ section {
 }
 
 .contact-left p i {
-    color: #ff007a;
+    color: #ff4500; /* Orange icons */
     margin-right: 10px;
 }
 
 .social-icons a {
-    color: #00ffcc;
+    color: #ffd700; /* Gold icons */
     font-size: 24px;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #ff007a;
+    color: #ff4500; /* Orange hover */
 }
 
 .contact-right form {
@@ -233,7 +233,7 @@ section {
 }
 
 .contact-right input, .contact-right textarea {
-    background: #1a1a3d;
+    background: rgba(26, 26, 26, 0.9); /* Darker input fields */
     border: none;
     padding: 15px;
     margin: 10px 0;
@@ -248,8 +248,8 @@ section {
 
 #copyright {
     padding: 20px 0;
-    background: #1a1a3d;
-    color: #b3b3cc;
+    background: rgba(26, 26, 26, 0.9); /* Darker footer */
+    color: #fffacd; /* Light gold */
     text-align: center;
 }
 
@@ -265,7 +265,7 @@ section {
         right: -200px;
         width: 200px;
         height: 100vh;
-        background: #1a1a3d;
+        background: rgba(26, 26, 26, 0.9); /* Darker mobile menu */
         flex-direction: column;
         padding-top: 60px;
         transition: right 0.3s;
