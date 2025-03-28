@@ -8,157 +8,167 @@
     <script src="https://kit.fontawesome.com/86180e7301.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark-mode">
-    <header id="home">
-        <div class="container">
-            <nav>
-                <img src="another music.jpg" alt="Aethiop Sound Logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#releases">Releases</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#youtube">YouTube</a></li>
-                    <li><a href="#artists">Team</a></li>
-                    <li><a href="#audio">Audio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                <div class="mode-toggle">
-                    <i class="fa-solid fa-moon" id="dark-mode-toggle" onclick="toggleMode('dark')"></i>
-                    <i class="fa-solid fa-sun" id="light-mode-toggle" onclick="toggleMode('light')"></i>
-                </div>
-            </nav>
-            <div class="header-text">
-                <h1>Welcome to <span>Aethiop Sound</span></h1>
-                <p>Where Musical Dreams Become Reality</p>
-                <a href="#releases" class="btn">Explore Releases</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="releases">
-        <div class="container">
-            <h1 class="sub-title">Latest Releases</h1>
-            <div class="release-grid">
-                <div class="release-card">
-                    <img src="music.jpg" alt="Release 1">
-                    <h3>Neon Pulse</h3>
-                    <p>Artist: SynthMaster | Genre: Cyberpunk</p>
-                    <a href="#" class="btn-small">Listen Now</a>
-                </div>
-                <div class="release-card">
-                    <img src="music.jpg" alt="Release 2">
-                    <h3>Echoes of the Grid</h3>
-                    <p>Artist: WaveRiser | Genre: Synthwave</p>
-                    <a href="#" class="btn-small">Listen Now</a>
-                </div>
-                <div class="release-card">
-                    <img src="music.jpg" alt="Release 3">
-                    <h3>Quantum Drift</h3>
-                    <p>Artist: ElektroVibe | Genre: Techno</p>
-                    <a href="#" class="btn-small">Listen Now</a>
+    <main>
+        <header id="home">
+            <!-- Header content remains the same -->
+            <div class="container">
+                <nav>
+                    <img src="images/another music.jpg" alt="Aethiop Sound Logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#releases">Releases</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#youtube">YouTube</a></li>
+                        <li><a href="#artists">Team</a></li>
+                        <li><a href="#audio">Audio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <div class="mode-toggle">
+                        <i class="fa-solid fa-moon" id="dark-mode-toggle" onclick="toggleMode('dark')"></i>
+                        <i class="fa-solid fa-sun" id="light-mode-toggle" onclick="toggleMode('light')"></i>
+                    </div>
+                </nav>
+                <div class="header-text">
+                    <h1>Welcome to <span>Aethiop Sound</span></h1>
+                    <p>Where Musical Dreams Become Reality</p>
+                    <a href="#releases" class="btn">Explore Releases</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="videos">
-        <div class="container">
-            <h1 class="sub-title">Featured Videos</h1>
-            <div class="video-grid">
-                <div class="video-card">
-                    <video controls poster="music.jpg">
-                        <source src="videos/sample-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Neon Pulse MV</h3>
-                </div>
-                <div class="video-card">
-                    <video controls poster="music.jpg">
-                        <source src="videos/sample-video2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Echoes Live</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="youtube">
-        <div class="container">
-            <h1 class="sub-title">YouTube Highlights</h1>
-            <div class="youtube-grid">
-                <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="youtube-card">
-                    <img src="music.jpg" alt="YouTube Thumbnail 1">
-                    <h3>Neon Pulse Teaser</h3>
-                </a>
-                <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="youtube-card">
-                    <img src="music.jpg" alt="YouTube Thumbnail 2">
-                    <h3>Grid Echoes Live</h3>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="artists">
-        <div class="container">
-            <h1 class="sub-title">Our Team</h1>
-            <div class="artist-grid">
-                <div class="artist-card">
-                    <img src="Untitled.jpeg" alt="Manager">
-                    <h3>Tesloach Jacob</h3>
-                    <p>Company manager visionary and philosophic giant.</p>
-                </div>
-                <div class="artist-card">
-                    <img src="Stu.jpeg" alt="Artist 2">
-                    <h3>98th Twinz</h3>
-                    <p>G.T the 98th Twin, World Class Producer and Lyricist</p>
-                </div>
-                <div class="artist-card">
-                    <img src="CEO.jpeg" alt="C.E.O">
-                    <h3>Ryan Charkuoth</h3>
-                    <p>Techno innovator pushing electronic boundaries.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="audio">
-        <div class="container">
-            <h1 class="sub-title">Audio Player (Coming Soon)</h1>
-            <div class="audio-placeholder">
-                <p>Audio player under construction. Stay tuned!</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h1 class="sub-title">Contact Us</h1>
-            <div class="contact-row">
-                <div class="contact-left">
-                    <p><i class="fa-regular fa-paper-plane"></i> tesloachjacob@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +254-700-159-567</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
-                        <a href="#"><i class="fa-brands fa-spotify"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <section id="releases">
+            <!-- Releases content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">Latest Releases</h1>
+                <div class="release-grid">
+                    <div class="release-card">
+                        <img src="images/music.jpg" alt="Release 1">
+                        <h3>Neon Pulse</h3>
+                        <p>Artist: SynthMaster | Genre: Cyberpunk</p>
+                        <a href="#" class="btn-small">Listen Now</a>
+                    </div>
+                    <div class="release-card">
+                        <img src="images/music.jpg" alt="Release 2">
+                        <h3>Echoes of the Grid</h3>
+                        <p>Artist: WaveRiser | Genre: Synthwave</p>
+                        <a href="#" class="btn-small">Listen Now</a>
+                    </div>
+                    <div class="release-card">
+                        <img src="images/music.jpg" alt="Release 3">
+                        <h3>Quantum Drift</h3>
+                        <p>Artist: ElektroVibe | Genre: Techno</p>
+                        <a href="#" class="btn-small">Listen Now</a>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Send</button>
-                    </form>
+            </div>
+        </section>
+
+        <section id="videos">
+            <!-- Videos content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">Featured Videos</h1>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <video controls poster="images/music.jpg">
+                            <source src="videos/sample-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Neon Pulse MV</h3>
+                    </div>
+                    <div class="video-card">
+                        <video controls poster="images/music.jpg">
+                            <source src="videos/sample-video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Echoes Live</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="copyright" align="center">
-            © 2025 - Aethiop Sound Records - All Rights Reserved.
-        </div>
-    </section>
+        </section>
+
+        <section id="youtube">
+            <!-- YouTube content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">YouTube Highlights</h1>
+                <div class="youtube-grid">
+                    <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="youtube-card">
+                        <img src="images/music.jpg" alt="YouTube Thumbnail 1">
+                        <h3>Neon Pulse Teaser</h3>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="youtube-card">
+                        <img src="images/music.jpg" alt="YouTube Thumbnail 2">
+                        <h3>Grid Echoes Live</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="artists">
+            <!-- Artists content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">Our Team</h1>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="images/Untitled.jpeg" alt="Manager">
+                        <h3>Tesloach Jacob</h3>
+                        <p>Company manager visionary and philosophic giant.</p>
+                    </div>
+                    <div class="artist-card">
+                        <img src="images/Stu.jpeg" alt="Artist 2">
+                        <h3>98th Twinz</h3>
+                        <p>G.T the 98th Twin, World Class Producer and Lyricist</p>
+                    </div>
+                    <div class="artist-card">
+                        <img src="images/CEO.jpeg" alt="C.E.O">
+                        <h3>Ryan Charkuoth</h3>
+                        <p>Techno innovator pushing electronic boundaries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="audio">
+            <!-- Audio content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">Audio Player (Coming Soon)</h1>
+                <div class="audio-placeholder">
+                    <p>Audio player under construction. Stay tuned!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <!-- Contact content remains the same -->
+            <div class="container">
+                <h1 class="sub-title">Contact Us</h1>
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <p><i class="fa-regular fa-paper-plane"></i> tesloachjacob@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +254-700-159-567</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+                            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="copyright">
+        © 2025 - Aethiop Sound Records - All Rights Reserved.
+    </footer>
 
     <button id="scroll-top" class="scroll-top-btn">
         <i class="fa-solid fa-arrow-up"></i>
