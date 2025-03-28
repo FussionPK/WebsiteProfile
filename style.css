@@ -9,6 +9,10 @@ body {
     color: #e6e6e6;
     overflow-x: hidden;
     transition: background 0.5s, color 0.5s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    margin: 0;
 }
 
 body.dark-mode {
@@ -18,6 +22,10 @@ body.dark-mode {
 body.light-mode {
     background: linear-gradient(to bottom, #ffffff 0%, #f0e4ff 100%);
     color: #1a1a1a;
+}
+
+main {
+    flex: 1 0 auto; /* Main content takes up remaining space */
 }
 
 .container {
@@ -374,27 +382,28 @@ body.light-mode .contact-right textarea {
     align-self: flex-start;
 }
 
-/* Copyright (Footer) */
+/* Footer (Copyright) */
 #copyright {
-    padding: 50px 0; /* Increased from 30px for more breathing room */
-    background: rgba(26, 26, 26, 0.95); /* Slightly more opaque for better contrast */
-    color: #ffd700; /* Changed to gold for better visibility */
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    width: 100%;
+    padding: 50px 0;
+    background: rgba(26, 26, 26, 0.95);
+    color: #ffd700;
     text-align: center;
-    font-size: 24px; /* Increased from 20px */
-    margin-top: 40px; /* Added margin to separate from contact section */
-    border-top: 2px solid #ff4500; /* Added a subtle orange border for style */
+    font-size: 24px;
+    border-top: 2px solid #ff4500;
 }
 
 body.light-mode #copyright {
     background: rgba(255, 255, 255, 0.95);
-    color: #660374; /* Purple text in light mode for contrast */
-    border-top: 2px solid #660374; /* Matching border */
+    color: #660374;
+    border-top: 2px solid #660374;
 }
 
 /* Scroll to Top Button */
 .scroll-top-btn {
     position: fixed;
-    bottom: 30px;
+    bottom: 80px; /* Adjusted to account for footer height */
     right: 30px;
     background: #ff4500;
     color: #fff;
@@ -456,8 +465,11 @@ body.light-mode #copyright {
     }
 
     #copyright {
-        padding: 40px 0; /* Slightly reduced for mobile */
-        font-size: 20px; /* Slightly reduced for mobile */
-        margin-top: 30px; /* Adjusted for mobile */
+        padding: 40px 0;
+        font-size: 20px;
+    }
+
+    .scroll-top-btn {
+        bottom: 70px; /* Adjusted for mobile */
     }
 }
