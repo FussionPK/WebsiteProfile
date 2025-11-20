@@ -1,285 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aethiop Sound Records</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/86180e7301.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Ryan Charkuoth — Cybersecurity, Linux Engineering, C & Python Development Portfolio">
+    <title>Ryan Charkuoth • Portfolio</title>
+    <link rel="preload" href="assets/images/CEO.jpeg" as="image">
+    <link rel="icon" type="image/svg+xml" href="assets/static/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/86180e7301.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
 </head>
-<body class="dark-mode">
-    <main>
-        <header id="home">
-            <video autoplay loop muted playsinline class="header-video">
-                <source src="test.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="container">
-                <nav>
-                    <img src="Screenshot 2025-03-29 191115.png" alt="Aethiop Sound Logo" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#releases">Releases</a></li>
-                        <li><a href="#videos">Videos</a></li>
-                        <li><a href="#youtube">YouTube</a></li>
-                        <li><a href="#artists">Team</a></li>
-                        <li><a href="#audio">Audio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Primary" id="nav">
+            <div class="nav__brand">
+                <img src="assets/images/Logo.jpg" alt="Ryan Charkuoth logo" class="logo" loading="lazy" width="64" height="64">
+                <span class="brand-text">Ryan Charkuoth</span>
+            </div>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" id="navToggle" title="Menu">
+                <span class="sr-only">Toggle menu</span>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mode-toggle" role="group" aria-label="Theme">
+                <button class="mode-toggle__btn" id="darkBtn" data-mode="dark" aria-pressed="false" title="Dark mode">
+                    <i class="fa-solid fa-moon"></i><span class="sr-only">Dark</span>
+                </button>
+                <button class="mode-toggle__btn" id="lightBtn" data-mode="light" aria-pressed="false" title="Light mode">
+                    <i class="fa-solid fa-sun"></i><span class="sr-only">Light</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="hero__grid">
+                <figure class="hero__portrait">
+                    <img src="assets/images/CEO.jpeg" alt="Portrait of Ryan Charkuoth" width="300" height="380" loading="eager" class="ceo-portrait">
+                    <figcaption class="sr-only">Ryan Charkuoth</figcaption>
+                </figure>
+                <div class="hero__content">
+                    <h1 class="hero__title">Securing & Building Systems</h1>
+                    <p class="hero__tagline">Cybersecurity • Linux • C • Python</p>
+                    <p class="hero__typing">Focus: <span id="typed" aria-live="polite">Learning More</span><span class="cursor" aria-hidden="true">|</span></p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+                    </div>
+                    <blockquote class="hero__quote" cite="#">“Keep it simple. Secure by design.”</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-label="Projects">
+            <div class="section__head">
+                <h2 class="section__title">Featured Projects</h2>
+                <p class="section__subtitle">Selected work spanning offensive, defensive & engineering tooling.</p>
+            </div>
+            <div id="projectsGrid" class="grid projects-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="tech" class="section" aria-label="Technologies">
+            <div class="section__head">
+                <h2 class="section__title">Tech Stack</h2>
+                <p class="section__subtitle">Focused tools & platforms.</p>
+            </div>
+            <ul class="tech-list" role="list">
+                <li class="tech-item"><i class="fa-brands fa-linux"></i><span>Linux</span></li>
+                <li class="tech-item"><i class="fa-brands fa-kalilinux"></i><span>Kali</span></li>
+                <li class="tech-item"><i class="fa-solid fa-terminal"></i><span>Bash</span></li>
+                <li class="tech-item"><i class="fa-brands fa-python"></i><span>Python</span></li>
+                <li class="tech-item"><i class="fa-solid fa-c"></i><span>C</span></li>
+                <li class="tech-item"><i class="fa-brands fa-docker"></i><span>Docker</span></li>
+                <li class="tech-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></li>
+                <li class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub</span></li>
+                <li class="tech-item"><i class="fa-solid fa-code"></i><span>VS Code</span></li>
+                <li class="tech-item"><i class="fa-solid fa-file-code"></i><span>Neovim</span></li>
+                <li class="tech-item"><i class="fa-solid fa-network-wired"></i><span>Wireshark</span></li>
+            </ul>
+        </section>
+
+        <section id="stats" class="section" aria-label="Stats & Metrics">
+            <div class="section__head">
+                <h2 class="section__title">Skill Snapshot & Activity</h2>
+            </div>
+            <div class="stats-layout">
+                <div class="card chart-card" aria-labelledby="skillsChartTitle">
+                    <h3 id="skillsChartTitle" class="card__title">Skills Radar</h3>
+                    <canvas id="skillsChart" width="420" height="420"></canvas>
+                </div>
+                <figure class="card gh-card gh-card--large" aria-label="GitHub Stats">
+                    <h3 class="card__title">GitHub Overview</h3>
+                    <img src="https://github-readme-stats.vercel.app/api?username=FussionPK&show_icons=true&theme=dark&hide_border=true&bg_color=000000" alt="GitHub stats for FussionPK" width="480" height="480" loading="lazy" class="gh-stats" />
+                </figure>
+                <div class="card counters-card" aria-label="Live counters">
+                    <h3 class="card__title">Activity Counters</h3>
+                    <ul class="counters" role="list">
+                        <li class="counter"><span class="counter__value" data-target="100">0</span><span class="counter__label">Commits</span></li>
+                        <li class="counter"><span class="counter__value" data-target="13">0</span><span class="counter__label">Repos</span></li>
+                        <li class="counter"><span class="counter__value" data-target="2">0</span><span class="counter__label">Followers</span></li>
                     </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                    <div class="mode-toggle">
-                        <i class="fa-solid fa-moon" id="dark-mode-toggle" onclick="toggleMode('dark')"></i>
-                        <i class="fa-solid fa-sun" id="light-mode-toggle" onclick="toggleMode('light')"></i>
-                    </div>
-                </nav>
-                <div class="header-text">
-                    <h1>Welcome to <span>Aethiop Productions</span></h1>
-                    <p>Where Musical Dreams Become Reality</p>
-                    <a href="#releases" class="btn">Explore Releases</a>
-                </div>
-            </div>
-        </header>
-
-       
-        <section id="releases">
-            <div class="container">
-                <h1 class="sub-title">Latest Releases</h1>
-                <div class="release-grid">
-                    <div class="release-card">
-                        <img src="music.jpg" alt="Release 1">
-                        <h3>Bumkon</h3>
-                        <p>Artist: G.T | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>A high-energy track that blends futuristic beats with an african aesthetic, perfect for late-night drives through blissful cities.</p>
-                        <a href="https://youtu.be/EufmUJvP9EA?si=xkGc7NtspCNZpR61" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="music.jpg" alt="Release 2">
-                        <h3>Better Days</h3>
-                        <p>Artist: G.T | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>Immerse yourself in the nostalgic sounds of the early 2000s with a modern twist, capturing the essence of a pop culture dreamscape.</p>
-                        <a href="https://youtu.be/26cg2JwRn3o?si=Y62glQZOiRbyBOB0" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="music.jpg" alt="Release 3">
-                        <h3>EGO</h3>
-                        <p>Artist: G.T | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>A pulsating personal anthem designed to get you moving, with intricate layers and a driving bassline.</p>
-                        <a href="https://youtu.be/U_MFgvEVmBQ?si=4OHirfKupWhYUwCc" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="music.jpg" alt="Release 4">
-                        <h3>Cant Break Me</h3>
-                        <p>Artist: G.T x Skili Dang x Kush Tycoon | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>A soothing ambient rap track that transports you to the stars, perfect for meditation or deep reflection.</p>
-                        <a href="https://youtu.be/yj95xb8FHn8?si=x47hkxt4DYxKUxux" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="another music.jpg" alt="Release 5">
-                        <h3>All I see</h3>
-                        <p>Artist: G.T | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>An electrifying mix of smooth beats and melodic synths, creating a soundscape that feels both futuristic and relaxing.</p>
-                        <a href="https://youtu.be/0b5nJ7YzvRM?si=RDGyK0SMxFSdsyHf" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="another music.jpg" alt="Release 6">
-                        <h3>Jinn</h3>
-                        <p>Artist: G.T | Genre: Afropop</p>
-                        <p>Release Date: February 2025</p>
-                        <p>An angelical beautiful track with deep, brooding tones, ideal for fans of pop and cinematic music.</p>
-                        <a href="https://youtu.be/jh1Vr0rLhQk?si=ydGFL-PPWZnLQCLE" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="another music.jpg" alt="Release 7">
-                        <h3>Laadte Yoow</h3>
-                        <p>Artist: G.T x Skili Dang x Saint Jones | Genre: Trap</p>
-                        <p>Release Date: February 2025</p>
-                        <p>A proper trap musical track that evokes the serenity of a lit up night, perfect for starting a long day.</p>
-                        <a href="https://youtu.be/aXjt0eFQKq8?si=ecAtTPFUjd5zeeEB" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
-                    <div class="release-card">
-                        <img src="another music.jpg" alt="Release 8">
-                        <h3>Next To Me</h3>
-                        <p>Artist: G.T | Genre: R&B</p>
-                        <p>Release Date: February 2025</p>
-                        <p>A mesmerizing track that pushes the boundaries of r&b music with its experimental sound design.</p>
-                        <a href="https://youtu.be/P8Xl9Hv07NM?si=v6NyY-EUaYTZg1dY" class="btn-small" target="_blank">Listen Now</a>
-                    </div>
                 </div>
             </div>
         </section>
 
-
-        <section id="videos">
-            <div class="container">
-                <h1 class="sub-title">Featured Videos</h1>
-                <div class="video-grid">
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Neon Pulse MV</h3>
-                        <p>A visually stunning music video that captures the essence of a cyberpunk city, with vibrant neon lights and futuristic visuals.</p>
-                    </div>
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Echoes Live</h3>
-                        <p>Watch WaveRiser perform "Echoes of the Grid" live at the SynthFest 2025, with an electrifying crowd and stunning stage effects.</p>
-                    </div>
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Quantum Drift Behind the Scenes</h3>
-                        <p>A behind-the-scenes look at the making of "Quantum Drift," featuring ElektroVibe in the studio and discussing their creative process.</p>
-                    </div>
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video4.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Starlit Frequencies Visualizer</h3>
-                        <p>A mesmerizing visualizer for "Starlit Frequencies," with cosmic animations that sync perfectly with the ambient beats.</p>
-                    </div>
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video5.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Digital Mirage Live Performance</h3>
-                        <p>PixelPulse performs "Digital Mirage" live at ElectroWave 2024, featuring stunning visuals and a high-energy set.</p>
-                    </div>
-                    <div class="video-card">
-                        <video controls poster="music.jpg">
-                            <source src="videos/sample-video6.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <h3>Shadow Circuit Cinematic Trailer</h3>
-                        <p>A cinematic trailer for "Shadow Circuit," showcasing its dark, atmospheric tones in a dystopian setting.</p>
-                    </div>
-                </div>
+        <section id="contact" class="section" aria-label="Contact">
+            <div class="section__head">
+                <h2 class="section__title">Connect</h2>
             </div>
-        </section>
-
-        <section id="youtube">
-            <div class="container">
-                <h1 class="sub-title">YouTube Highlights</h1>
-                <div class="youtube-grid">
-                    <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 1">
-                        <h3>Neon Pulse Teaser</h3>
-                        <p>A 30-second teaser for "Neon Pulse," showcasing the track’s high-energy beats and cyberpunk visuals.</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 2">
-                        <h3>Grid Echoes Live</h3>
-                        <p>Full live performance of "Echoes of the Grid" at SynthFest 2025, with an extended intro and crowd interaction.</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 3">
-                        <h3>Quantum Drift Lyric Video</h3>
-                        <p>A lyric video for "Quantum Drift," featuring futuristic typography and glitch effects that match the techno vibe.</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=example4" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 4">
-                        <h3>Artist Interview: CosmicEcho</h3>
-                        <p>An exclusive interview with CosmicEcho, discussing the inspiration behind "Starlit Frequencies" and their creative journey.</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=example5" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 5">
-                        <h3>Digital Mirage Studio Session</h3>
-                        <p>PixelPulse shares their studio process for creating "Digital Mirage," with tips for aspiring producers.</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=example6" target="_blank" class="youtube-card">
-                        <img src="music.jpg" alt="YouTube Thumbnail 6">
-                        <h3>Shadow Circuit Fan Reaction</h3>
-                        <p>Fans react to the release of "Shadow Circuit," sharing their thoughts on its dark, cinematic sound.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="artists">
-            <div class="container">
-                <h1 class="sub-title">Our Team</h1>
-                <div class="artist-grid">
-                    <div class="artist-card">
-                        <img src="Untitled.jpeg" alt="Manager">
-                        <h3>Tesloach Jacob</h3>
-                        <p>Company manager visionary and philosophic giant.</p>
-                        <p>With over 15 years in the music industry, Tesloach has a knack for spotting talent and turning dreams into chart-topping hits.</p>
-                    </div>
-                    <div class="artist-card">
-                        <img src="Stu.jpeg" alt="Artist 2">
-                        <h3>98th Twinz</h3>
-                        <p>G.T the 98th Twin, World Class Producer and Lyricist</p>
-                        <p>Known for his innovative production techniques, G.T dreams to collaborate with global artists and produce multiple award-winning tracks.</p>
-                    </div>
-                    <div class="artist-card">
-                        <img src="CEO.jpeg" alt="C.E.O">
-                        <h3>Ryan Charkuoth</h3>
-                        <p>Techno innovator pushing electronic boundaries.</p>
-                        <p>Ryan’s passion for technology and music drives Aethiop Sound’s cutting-edge approach to electronic music production.</p>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <ul class="contact-list" role="list">
+                        <li><i class="fa-regular fa-paper-plane"></i><a href="mailto:ryanios565@gmail.com">ryanios565@gmail.com</a></li>
+                        <li><i class="fa-brands fa-github"></i><a href="https://github.com/FussionPK" target="_blank" rel="noopener">github.com/FussionPK</a></li>
+                        <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/ryan-charkuoth-a521b5287">LinkedIn</a></li>
+                    </ul>
+                    <div class="social" role="group" aria-label="Social links">
+                        <a href="https://github.com/FussionPK" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ryan-charkuoth-a521b5287" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:ryanios565@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="audio">
-            <div class="container">
-                <h1 class="sub-title">Audio Player (Coming Soon)</h1>
-                <div class="audio-placeholder">
-                    <p>Audio player under construction. Stay tuned!</p>
-                    <p>In the meantime, check out our latest releases above or follow us on social media for updates on this exciting feature!</p>
-                    <p>We’re working on a custom audio player that will let you stream our latest tracks directly on the site, with features like playlists, shuffle, and more.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h1 class="sub-title">Contact Us</h1>
-                <div class="contact-row">
-                    <div class="contact-left">
-                        <p><i class="fa-regular fa-paper-plane"></i> tesloachjacob@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i> +254-700-159-567</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
-                            <a href="#"><i class="fa-brands fa-spotify"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn">Send</button>
-                        </form>
+                        <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
                     </div>
-                </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Project details / message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer id="copyright">
-        © 2025 - Aethiop Sound Records - All Rights Reserved.
+    <footer class="site-footer" role="contentinfo">
+        <p>© <span id="year"></span> Ryan Charkuoth. All Rights Reserved.</p>
     </footer>
 
-    <button id="scroll-top" class="scroll-top-btn">
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" hidden>
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
